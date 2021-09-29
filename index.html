@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Cash Register</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">Cash Register (Mark-10)</div>
+        <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
+        
+        <div class="bill-received">
+            <label  class="text" for="bill-amount">Bill Amount :</label>
+            <input type="text" id="bill-amount" placeholder="Enter  bill amount"></input>
+        </div>
+
+        <button class="btn btn-next">Next</button>
+        <p class="error-msg err"></p>
+
+        
+            <div id="box2" style="display: none;">
+                <div class="cash-amount-given">
+                    <label class="text" for="cash-given">Cash Given :</label>
+                    <input type="text" id="cash-given" placeholder="Enter  cash amount"></input>
+                </div>
+    
+                <button class="btn btn-submit">Submit</button>
+                <p class="error-msg err1"></p>
+
+            </div>
+            <div id="box1" style="display: none;">
+            
+                <table class="tbl">
+                    <tr class="tbl-row">
+                        <th>No.of Notes</th>
+                        <th>Notes</th>
+                    </tr>
+                    <tr class="tbl-row">
+                        <td>2000</td>
+                        <td class="tbl-col">0</td>
+                    </tr>
+                    <tr class="tbl-row">
+                        <td>500</td>
+                        <td class="tbl-col">0</td>
+                    </tr>
+                    <tr class="tbl-row">
+                        <td>100</td>
+                        <td class="tbl-col">0</td>
+                    </tr>
+                    <tr>
+                        <td>50</td>
+                        <td class="tbl-col">0</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td class="tbl-col">0</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="tbl-col">0</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="tbl-col">0</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="tbl-col">0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="tbl-col">0</td>
+                    </tr>  
+                </table>
+                <h2 class="result">Total no. of notes required :</h2>
+           
+               
+            
+    </div>
+            
+        </div>
+    </div>
+    
+</body>
+<script src="index.js"></script>
+</html>
